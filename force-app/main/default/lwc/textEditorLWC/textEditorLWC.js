@@ -11,7 +11,7 @@ export default class TextEditorLWC extends LightningElement {
 
     handlebod(event) {
 
-        console.log('qeq', event.target.title);
+        console.log('qeqgggbgbg', event.target.title);
         switch (event.target.title) {
             case 'Bold':
                 console.log(this.template.querySelector('[data-id="txtInp"]').classList.value);
