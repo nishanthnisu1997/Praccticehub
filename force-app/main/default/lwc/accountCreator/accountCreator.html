@@ -1,0 +1,9 @@
+<template>
+    <lightning-card>
+        <lightning-record-form object-api-name={objectApiName} fields={fields} onsuccess={handleSuccess} onsubmit={handleSubmit}>
+            
+        </lightning-record-form>
+        <lightning-datatable data={arrayAcc} columns={column} key-field="name">
+        </lightning-datatable>
+    </lightning-card>
+</template>

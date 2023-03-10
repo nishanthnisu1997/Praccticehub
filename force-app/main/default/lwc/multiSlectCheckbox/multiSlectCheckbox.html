@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title=" Multi-Select Checkbox">
+            <lightning-checkbox-group name="Checkbox Group"
+                                      label="Checkbox Group"
+                                      options={options}
+                                      value={value}
+                                      onchange={handleChange}></lightning-checkbox-group>
+            <p>Selected Values are: {_selected}</p>
+    </lightning-card>
+</template>

@@ -1,0 +1,49 @@
+<template>
+    <lightning-card title="New Contact">
+        <Lightning-layout>
+            <lightning-layout-item size="6">
+                <lightning-input label="First name" type="text" onchange={handleFname}></lightning-input>
+                <lightning-input label="Last name" type="text" onchange={handleLname}></lightning-input>
+                <lightning-input label="Email" type="Email" onchange={handleEmail}></lightning-input>
+                <lightning-input-address
+            name='txtBillingAddress'
+            address-label="Mailing Address"
+            street-label="Street"
+            city-label="City"
+            country-label="Country"
+            province-label="Province"
+            postal-code-label="PostalCode"
+            field-level-help="Help Text for inputAddress field"
+            onchange={HAndleMailingAddress}
+            ></lightning-input-address>
+                <lightning-input label="Same as mailing address" type="checkbox" onchange={handleCheckbox}></lightning-input>
+                <lightning-input-address
+                name='txtBillingAddress'
+                address-label="Other Address"
+                street-label="OtherStreet"
+                city-label="OtherCity"
+                country-label="OtherCountry"
+                province-label="OtherProvince"
+                postal-code-label="OtherPostalCode"
+                field-level-help="Help Text for inputAddress field"
+                street={streetValue}
+                postal-code={postalCodeValue}
+                onchange={handleOtherAddress}
+                ></lightning-input-address>
+            </lightning-layout-item>
+        </Lightning-layout>
+        <div  class="slds-align_absolute-center " >
+            <lightning-button label="Save" variant="Brand" onclick={handleSave} class="slds-p-around_medium" ></lightning-button>
+            <lightning-button label="Reset" variant="Brand" onclick={handleReset}></lightning-button>
+    
+        </div>
+        
+
+    </lightning-card>
+    <c-child-vivial-training rec-id={recordId} name={name} bol-child ="True"></c-child-vivial-training>
+
+    <!-- <Lightning-card >
+        <lightning-button label="Related Contacts" onclick={handletable}></lightning-button>
+        <lightning-datatable key-field="id" data={relCon} columns={column}></lightning-datatable>
+    </Lightning-card> -->
+</template>

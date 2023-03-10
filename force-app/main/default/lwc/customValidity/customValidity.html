@@ -1,0 +1,56 @@
+<template>
+    
+    <lightning-card>
+        <lightning-input type={dataType} label="input" data-id="inp"  ></lightning-input>
+        <lightning-icon icon-name="utility:preview" onmousedown={handleicon} onmouseup={handleOut}  size="x-small" alternative-text="dont press" class="slds-m-left_xx-small but" title="please press"></lightning-icon>
+    </lightning-card>
+    <lightning-card>
+        <!-- <div style="padding-left:2rem;padding-top:5rem;position:relative">
+             <lightning-icon aria-describedby="help" aria-disabled="true" icon-name="utility:preview" title="please press" onmouseover={onhover}></lightning-icon>
+            
+            <div class="slds-popover slds-popover_tooltip slds-nubbin_bottom-left" role="tooltip" id="help" style="position:absolute;top:-100px;left:35px" if:true={boolImage}>
+              <div class="slds-popover__body">
+                <img src={imageurl} alt="img">     
+                </div>
+            </div>
+          </div> -->
+    <!-- </lightning-card>
+    <lightning-card>
+        <img src={imageurl} alt="img">     
+        <lightning-button label="Increase Counter" onmousedown={increaseCounter} onmouseup={stopCounting}></lightning-button>
+        <hr></hr>
+        <input readonly value={counter}></input>
+        <img src={imageurl1} alt="img">     
+        <lightning-button label="Increase Counter" onmousedown={increaseCounter} onmouseup={stopCounting}></lightning-button>
+        <hr></hr>
+        <input readonly value={counter}></input>
+    </lightning-card -->
+
+ <Lightning-card>
+     
+            
+</Lightning-card>
+
+ <lightning-card>
+  <div style="padding-left:2rem;padding-top:5rem;position:relative">
+      <lightning-helptext name="cvv" aria-describedby="help" aria-disabled="true" onmouseover={onhover} onmouseout={onhoverout}></lightning-helptext>
+       
+       <div class="slds-popover slds-popover_tooltip slds-nubbin_bottom-left" role="tooltip" id="help" style="position:absolute;top:-80px;left:17px" if:true={boolImage}>
+         <div class="slds-popover__body">
+           <img src={imageurl} alt="img">     
+         </div>
+         </div>
+         </div>
+      </Lightning-card> 
+    <div style="padding-left:2rem;padding-top:5rem;position:relative">
+        <lightning-helptext name="RN" aria-describedby="help1" aria-disabled="true"  onmouseover={onhover} onmouseout={onhoverout}></lightning-helptext>
+       
+       <div class="slds-popover slds-popover_tooltip slds-nubbin_bottom-left" role="tooltip" id="help1" style="position:absolute;top:-35px;left:17px" if:true={boolImage1}>
+         <div class="slds-popover__body">
+           <img src={imageurl1} alt="img">     
+         </div>
+         </div>
+         </div>
+         
+</lightning-card> 
+</template>

@@ -1,0 +1,10 @@
+<template>
+    <Lightning-card>
+        <div class = "slds-box">
+            <lightning-input type="text" label="Username" required=true onchange={handleUserName} > </lightning-input>
+            <lightning-input type="password" label="Password" required=true onchange={handlePassword}> </lightning-input>
+            <button class="slds-align_absolute-center slds-m-top_small" onclick ={handleLogInClick}>Login</button>
+        </div>
+    
+    </Lightning-card>
+</template>

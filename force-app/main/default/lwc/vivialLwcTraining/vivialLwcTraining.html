@@ -1,0 +1,57 @@
+<template>
+    <lightning-card>
+        <p>This is the paragraph displayed all the time when the page is loaded</p>
+        <lightning-input type="checkbox" onchange={handleBool}> </lightning-input>
+        <template if:true={bolPara}>
+            <p style="color:green">This is the para which is displayed only <b>boolean is true</b></p>
+            <!-- <h1><b>List of Accounts</b></h1>
+            <template for:each={allacnts.data} for:item="acc">
+                <p key={acc.Id}>{acc.Name}</p>
+            </template> -->
+
+        </template>
+        <lightning-card title="Accounts Table">
+            <lightning-datatable key-field="id" data={allacnts.data} columns={column}>
+                
+            </lightning-datatable>
+
+        </lightning-card>
+        
+        <c-child-vivial-training name={name} bol-child ="True"></c-child-vivial-training>
+
+    </lightning-card>
+
+    <Lightning-card title ="form">
+       <lightning-layout>
+            <lightning-layout-item size="3">
+                <lightning-input label="LWC Training name" value={lwcName} type=" text" onchange={handlelwcname} > </lightning-input>
+        
+                <lightning-input label="LWC Trainin Date" value={lwcDate} type=" Date" onchange={handleLwcdate}> </lightning-input>
+
+            </lightning-layout-item>
+
+       </lightning-layout>
+       <lightning-button label="submit" onclick={handleSubmit}></lightning-button>
+       <P>{formValue}</P>
+    </Lightning-card>
+    <lightning-button label="Quick action" onclick={handleQuickAction}></lightning-button>
+    <template if:true={bolPop}>
+        <lightning-quick-action-panel header="My action" role="dialog" aria-modal="true" aria-hidden="true">
+            Here's some content for the modal body.
+    
+            <div slot="footer">
+                <lightning-button
+                    variant="neutral"
+                    label="Cancel"
+                ></lightning-button>
+                <lightning-button
+                    variant="brand"
+                    label="Save"
+                    class="slds-m-left_x-small"
+                ></lightning-button>
+            </div>
+        </lightning-quick-action-panel>
+
+    </template>
+ <lightning-button label ="New" onclick={handleNew}></lightning-button>
+</template>

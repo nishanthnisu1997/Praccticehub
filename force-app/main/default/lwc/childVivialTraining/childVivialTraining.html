@@ -1,0 +1,16 @@
+<template>
+
+    <p if:true={bolChild}>child for understandsing the child concepts.{name}</p>
+    <lightning-card>
+        <lightning-record-view-form
+    object-api-name="Account"
+    record-id={recId}
+>
+    <lightning-output-field field-name={nameField}> </lightning-output-field>
+</lightning-record-view-form>
+    </lightning-card>
+    <Lightning-card >
+        <lightning-button label="Related Contacts" onclick={handletable}></lightning-button>
+        <lightning-datatable key-field="id" data={relCon} columns={column}></lightning-datatable>
+    </Lightning-card>
+</template>

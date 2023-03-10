@@ -1,0 +1,16 @@
+<template>
+    <lightning-card>
+        <lightning-input label="Account" type="search" value={key} placeholder="search here">
+            <div class="slds-m-around_medium">
+                <lightning-input type="search" onchange={handleKeyChange} class="slds-m-bottom_small" label="Search" value={searchKey}></lightning-input>
+                <template if:true={accounts.data}>
+                    <template for:each={accounts.data} for:item="accounts">
+                        <p key={accounts.Id}>{accounts.Name}</p>
+                    </template>
+                </template>
+               
+            </div>
+    
+        </lightning-input>
+    </lightning-card>
+</template>

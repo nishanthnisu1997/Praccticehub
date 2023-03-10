@@ -1,0 +1,15 @@
+.boldText{
+font-weight: bold;
+}
+.italicText{
+    font-style:italic;
+}
+
+.ulText{
+    text-decoration: line-through;  
+
+}
+.styleInp{
+    width:50%;
+}
+

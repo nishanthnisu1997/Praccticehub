@@ -1,0 +1,13 @@
+.but{
+    position: absolute;
+    margin:-24px 5px 0px 360px;
+    cursor: pointer;
+}
+
+.butcol{
+    background-color: brown;
+}
+
+.impimg{
+background-image: url('resourceUrl/Test_image');
+}

@@ -1,0 +1,9 @@
+<template>
+    <Lightning-card>
+        <lightning-button-icon icon-name="utility:bold" alternative-text="Zoom in" title="Bold" onclick={handlebod}></lightning-button-icon>&nbsp;
+        <lightning-button-icon icon-name="utility:italic" alternative-text="Zoom in" onclick={handlebod} title="Italic"></lightning-button-icon>&nbsp;
+        <lightning-button-icon icon-name="utility:underline" alternative-text="Zoom in" title="UL" onclick={handlebod}></lightning-button-icon>
+
+        <Lightning-input type="Text" label = 'Text Editor box' data-id="txtInp" value={strValue}  class="styleInp" onchange={handleInput} ></Lightning-input>
+    </Lightning-card>   
+</template>
