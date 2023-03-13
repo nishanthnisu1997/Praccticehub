@@ -10,7 +10,7 @@ export default class TextEditorLWC extends LightningElement {
     }
 
     handlebod(event) {
-        //123456789
+        
         console.log('qeqgggbgbg', event.target.title);
         switch (event.target.title) {
             case 'Bold':
